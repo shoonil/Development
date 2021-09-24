@@ -1,0 +1,564 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    {% load  static %}
+    <link rel="stylesheet" href="{%static 'style.css'%}">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+</head>
+
+<body>
+<div class="container">
+<div class="container box-shadow">
+<div class="col-md-12 col-sm-12">
+<div class="col-md-10 col-sm-12">
+
+<div class="membership-form">
+    <h1>सदस्यता/सहयोग</h1>
+    <hr>
+    <p class="headparagraph">नेपालभित्र र बाहिर रहेका १८ वर्ष उमेर पुगेका नेपाली/गैर आवासीय नेपाली नागरिकले अनलाइन सेवाबाट वार्षिक सदस्यता शुल्क बुझाएर या अनलाइन सेवाबाट बुझाउने स्थिति नभएमा फारममा उल्लेखित “पछि बुझाउनेछु” विकल्प रोजेर सदस्यता लिन सक्नुहुनेछ। फारममा सदस्यता नलिएर आर्थिक सहयोगी वा स्वयंसेवीमात्र हुने विकल्प पनि प्रदान गरिएको छ।</p>
+    <hr>
+    <form action="https://dlfnepal.org/members-supporters/membership" method="post">
+        <input type="hidden" name="_token" value="SPBYMp4s1FXXbewF7FR8sruWAO97pZH7mmrgUayv">
+                          <!--<h3>व्यक्तिगत विवरण</h3>-->
+            <label for="name">पुरा नाम</label>
+                            
+                <div class="row">
+                    <div class="col-md-10 form-group">
+                        <input type="text" id="name" name="name" value="" class="form-control" placeholder="आफ्नो नाम र थर भर्नुहोस्">
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-md-4 form-group">
+                        <label for="email">ईमेल</label>
+                            <input type="text" id="email" value="" name="email" class="form-control">
+                    </div>
+                    <div class="col-md-8 form-group">
+                        <label for="mobile">फोन नम्बर</label>
+                        <div class="row">
+                            <div class="col-md-4">
+                                                <input type="number" id="country_code" name="country_code" value="" class="form-control" placeholder="एरिया कोड">
+                                                                                            </div>
+                                            <div class="col-md-8">
+                                                <input type="number" id="mobile" name="mobile" value="" class="form-control" placeholder="फोन नम्बर">
+                                                                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="row">
+                                    <div class="col-md-12 form-group">
+                                        <label for="gender">लिङ्ग</label>
+                                        <div class="row radio1 ">
+                                            <div class="col-md-2 form-check-inline"><input class="form-check-input" type="radio" name="gender" id="genderFemale" value="महिला">&nbsp;<label class="paragraph" for="genderFemale">महिला</label></div>
+                                            <div class="col-md-2 form-check-inline"><input class="form-check-input" type="radio" name="gender" id="genderMale" value="पुरूष">&nbsp;<label class="paragraph" for="genderMale">पुरूष</label></div>
+                                            <div class="col-md-2 form-check-inline"><input class="form-check-input" type="radio" name="gender" id="genderOther" value="अन्य">&nbsp;<label class="paragraph" for="genderOther">अन्य</label></div>
+                                                                                    </div>
+                                    </div>
+                                    <div class="col-md-12 form-group">
+                                        <label for="disabilities">अपांगता</label>
+                                        <div class="row radio1">
+                                            <div class="col-md-3 form-check-inline"><input class="form-check-input" type="radio" name="disability" id="disabilityYes" value="Yes">&nbsp;<label class="paragraph" for="disabilityYes">छ</label></div>
+                                            <div class="col-md-3 form-check-inline"><input class="form-check-input" type="radio" name="disability" id="disabilityNo" value="No">&nbsp;<label class="paragraph" for="disabilityNo">छैन</label></div>
+                                                                                    </div>
+                                    </div>
+                                </div>
+                                <div class="row">
+                                    <div class="col-md-3 form-group">
+                                        <label for="CountrySelect">जन्म मिति</label>
+                                        <select class="form-control" id="date_type" name="date_type">
+                                            <option value="AD">ईसं (AD)</option>
+                                            <option value="BS">विसं (BS)</option>
+                                        </select>
+                                                                            </div>
+                                    <div class="col-md-3 form-group">
+                                        <label for="dateSelect">जन्म गते</label>
+                                        <select class="form-control" id="day" name="day">
+                                                                                            <option value="1">1</option>
+                                                                                            <option value="2">2</option>
+                                                                                            <option value="3">3</option>
+                                                                                            <option value="4">4</option>
+                                                                                            <option value="5">5</option>
+                                                                                            <option value="6">6</option>
+                                                                                            <option value="7">7</option>
+                                                                                            <option value="8">8</option>
+                                                                                            <option value="9">9</option>
+                                                                                            <option value="10">10</option>
+                                                                                            <option value="11">11</option>
+                                                                                            <option value="12">12</option>
+                                                                                            <option value="13">13</option>
+                                                                                            <option value="14">14</option>
+                                                                                            <option value="15">15</option>
+                                                                                            <option value="16">16</option>
+                                                                                            <option value="17">17</option>
+                                                                                            <option value="18">18</option>
+                                                                                            <option value="19">19</option>
+                                                                                            <option value="20">20</option>
+                                                                                            <option value="21">21</option>
+                                                                                            <option value="22">22</option>
+                                                                                            <option value="23">23</option>
+                                                                                            <option value="24">24</option>
+                                                                                            <option value="25">25</option>
+                                                                                            <option value="26">26</option>
+                                                                                            <option value="27">27</option>
+                                                                                            <option value="28">28</option>
+                                                                                            <option value="29">29</option>
+                                                                                            <option value="30">30</option>
+                                                                                            <option value="31">31</option>
+                                                                                            <option value="32">32</option>
+                                                                                    </select>
+                                                                            </div>
+                                    <div class="col-md-3 form-group">
+                                        <label for="monthSelect">जन्म महिना</label>
+                                        <select class="form-control" id="month" name="month">
+                                                                                            <option value="1">1</option>
+                                                                                            <option value="2">2</option>
+                                                                                            <option value="3">3</option>
+                                                                                            <option value="4">4</option>
+                                                                                            <option value="5">5</option>
+                                                                                            <option value="6">6</option>
+                                                                                            <option value="7">7</option>
+                                                                                            <option value="8">8</option>
+                                                                                            <option value="9">9</option>
+                                                                                            <option value="10">10</option>
+                                                                                            <option value="11">11</option>
+                                                                                            <option value="12">12</option>
+                                                                                    </select>
+                                                                            </div>
+                                    <div class="col-md-3 form-group">
+                                        <label for="CountrySelect">जन्म वर्ष</label>
+                                        <input type="number" id="year" name="year" value="" class="form-control">
+                                                                            </div>
+                                </div>
+                                <div class="row">
+                                    <div class="col-md-6 form-group">
+                                        <label for="intro">परिचय पत्र</label>
+                                        <select class="form-control" id="identity_type" name="identity_type">
+                                            <option value="नागरिकता">नागरिकता</option>
+                                            <option value="मतदाता परिचय पत्र">मतदाता परिचय पत्र</option>
+                                            <option value="सवारी चालक अनुमती पत्र">सवारी चालक अनुमती पत्र</option>
+                                            <option value="राहादानी">राहदानी</option>
+                                        </select>
+                                                                            </div>
+                                    <div class="col-md-6 form-group">
+                                        <label for="introNumSelect">परिचय पत्र नम्बर</label>
+                                        <input type="text" id="identity_number" name="identity_number" value="" class="form-control">
+                                                                            </div>
+                                </div>
+                                <div class="row">
+                                    <div class="col-md-12 form-group">
+                                        <label for="objective">तपाईंले के उद्देश्यका लागी यो फारम भर्न लाग्नु भएको हो?</label>
+                                        <div class="row radio1">
+                                            <div class="col-md-6 form-check-inline"><input class="form-check-input" type="radio" name="intention_to_fill_up_form" id="memberCheckbox" value="सदस्यता" checked="">&nbsp;<label class="paragraph" for="intention_to_fill_up_form">सदस्यता</label></div>
+                                            <div class="col-md-6 form-check-inline"><input class="form-check-input" type="radio" name="intention_to_fill_up_form" id="economicHelpCheckbox" value="आर्थिक सहयोग">&nbsp;<label class="paragraph" for="intention_to_fill_up_form_1">आर्थिक सहयोग</label></div>
+                                        </div>
+                                        <div class="row radio1">
+                                            <div class="col-md-6 form-check-inline"><input class="form-check-input" type="radio" name="intention_to_fill_up_form" id="volunteering" value="स्वयंसेवा">&nbsp;<label class="paragraph" for="intention_to_fill_up_form_2">स्वयंसेवा</label></div>
+                                            <div class="col-md-6 form-check-inline"><input class="form-check-input" type="radio" name="intention_to_fill_up_form" id="allAbove" value="उल्लेखित सबै">&nbsp;<label class="paragraph" for="intention_to_fill_up_form_3">उल्लेखित सबै</label></div>
+                                        </div>
+                                                                            </div>
+                                </div>
+                                <div class="row">
+                                    <div class="col-md-8 form-group">
+                                        <label for="CountrySelect">हाल रहनुभएको देश</label>
+                                        <select class="form-control country" id="currentCountry" name="current_country">
+                                            <option value="Nepal">Nepal</option>
+                                            <option value="Afganisthan">Afganisthan</option>
+                                            <option value="Australia">Australia</option>
+                                            <option value="Austria">Austria</option>
+                                            <option value="Bahrain">Bahrain</option>
+                                            <option value="Bangladesh">Bangladesh</option>
+                							<option value="Belarus">Belarus</option>
+                							<option value="Belgium">Belgium</option>
+                							<option value="Brunei">Brunei</option>
+                							<option value="Cambodia">Cambodia</option>
+                							<option value="Canada">Canada</option>
+                							<option value="China">China</option>
+                							<option value="Cyprus">Cyprus</option>
+                							<option value="Czech Republic">Czech Republic</option>
+                							<option value="Denmark">Denmark</option>
+                							<option value="Finland">Finland</option>
+                							<option value="France">France</option>
+                							<option value="Germany">Germany</option>
+                							<option value="Hong Kong">Hong Kong</option>
+                							<option value="India">India</option>
+                							<option value="Indonesia">Indonesia</option>
+                							<option value="Ireland">Ireland</option>
+                							<option value="Israel">Israel</option>
+                							<option value="Italy">Italy</option>
+                							<option value="Japan">Japan</option>
+                							<option value="Jordan">Jordan</option>
+                							<option value="South Korea">South Korea</option>
+                							<option value="Kuwait">Kuwait</option>
+                							<option value="Lebanon">Lebanon</option>
+                							<option value="Luxembourg">Luxembourg</option>
+                							<option value="Malaysia">Malaysia</option>
+                							<option value="Mauritius">Mauritius</option>
+                							<option value="Myanmar">Myanmar</option>
+                							<option value="Netherlands">Netherlands</option>
+                							<option value="New Zealand">New Zealand</option>
+                							<option value="Norway">Norway</option>
+                							<option value="Oman">Oman</option>
+                							<option value="Pakistan">Pakistan</option>
+                							<option value="Poland">Poland</option>
+                							<option value="Portugal">Portugal</option>
+                							<option value="Romania">Romania</option>
+                							<option value="Russia">Russia</option>
+                							<option value="Saudi Arabia">Saudi Arabia</option>
+                							<option value="Singapore">Singapore</option>
+                							<option value="South Africa">South Africa</option>
+                							<option value="Spain">Spain</option>
+                							<option value="Sri Lanka">Sri Lanka</option>
+                							<option value="Sweden">Sweden</option>
+                							<option value="Switzerland">Switzerland</option>
+                							<option value="Syria">Syria</option>
+                							<option value="Taiwan">Taiwan</option>
+                							<option value="Thailand">Thailand</option>
+                							<option value="Turkey">Turkey</option>
+                							<option value="United Arab Emirates
+                							">United Arab Emirates
+                							</option>
+                							<option value="United Kingdom">United Kingdom</option>
+                							<option value="United States">United States</option>
+                							<option value="Vietnam">Vietnam</option>
+                							<option value="Virgin Islands, British">Virgin Islands, British</option>
+                                            <option value="Others">Others</option>
+                                        </select>
+                                                                            </div>
+                                </div>
+                                <hr>
+                                <div class="outside-country">
+                                    <div id="foreignCity" style="display: none;">
+                                        <h3>अस्थायी ठेगाना (विदेश)</h3>
+                                        <div class="row">
+                                            <div class="col-md-6 form-group">
+                                                    <label for="City">शहर</label>
+                                                    <input type="text" id="city" name="city" class="form-control">
+                                                                                                    </div>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <div class="country" id="temporaryAddress">
+                                        <h3>अस्थायी ठेगाना (स्वदेश)</h3>
+                                        <div class="form-group">
+                                            <label for="temporary">अस्थायी ठेगाना छ?</label>
+                                            <div class="row">
+                                                <div class="col-md-6 form-check-inline"><input class="form-check-input" type="radio" name="temporary" id="temporaryYes" value="Yes" onclick="">&nbsp;<label class="paragraph" for="temporaryYes">छ</label></div>
+                                                <div class="col-md-6 form-check-inline"><input class="form-check-input" type="radio" name="temporary" id="temporaryNo" value="No">&nbsp;<label class="paragraph" for="temporaryNo">छैन</label></div>
+                                            </div>
+                                            <div class="menu" id="temporaryField" style="display: none;">
+                                                <div class="row">
+                                                    <div class="col-md-6 form-group">
+                                                        <label for="pradesh">प्रदेश</label>
+                                                        <select class="form-control" id="temporary_province" name="temporary_province">
+                                                            <option value="">कृपया प्रदेश छनोट गर्नुहोस् </option>
+                                                                                                                                                                                    <option value="1">प्रदेश नम्बर १</option>
+                                                                                                                            <option value="2">प्रदेश नम्बर २</option>
+                                                                                                                            <option value="3">प्रदेश नम्बर ३</option>
+                                                                                                                            <option value="4">गण्डकी प्रदेश</option>
+                                                                                                                            <option value="5">प्रदेश नं. ५</option>
+                                                                                                                            <option value="6">कर्णाली प्रदेश</option>
+                                                                                                                            <option value="7">सुदुरपश्चिम प्रदेश</option>
+                                                                                                                                                                            </select>
+                                                                                                            </div>
+                                                    <div class="col-md-6 form-group">
+                                                        <label for="district">जिल्ला</label>
+                                                        <select class="form-control" id="temporary_district" name="temporary_district">
+                                                            <option value="">पहिला प्रदेश छनोट गर्नुहोस् </option>
+                                                        </select>
+                                                                                                            </div>
+                                                </div>
+                                                <div class="row">
+                                                    <div class="col-md-6 form-group">
+                                                        <label for="nagar">गाउँ/नगर</label>
+                                                        <select class="form-control" id="temporary_municipality" name="temporary_municipality">
+                                                            <option value="">पहिला जिल्ला छनोट गर्नुहोस् </option>
+                                                        </select>
+                                                                                                            </div>
+                                                    <div class="col-md-2 form-group">
+                                                        <label for="wardNumSelect">वार्ड नं.</label>
+                                                        <input type="text" id="wardNum" name="temporary_ward_no" value="" class="form-control">
+                                                                                                            </div>
+                                                    <div class="col-md-4 form-group">
+                                                        <label for="tole" class="disabilities">टोल.</label>
+                                                        <input type="text" id="tole" name="temporary_village" value="" class="form-control">
+                                                                                                            </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                <hr>
+                                <h3>स्थायी ठेगाना (स्वदेश)</h3>
+                                <div class="row">
+                                    <div class="col-md-6 form-group">
+                                        <label for="pradesh">प्रदेश</label>
+                                        <select class="form-control" id="permanent_province" name="permanent_province">
+                                            <option value="">कृपया प्रदेश छनोट गर्नुहोस्</option>
+                                                                                                                                    <option value="1">प्रदेश नम्बर १</option>
+                                                                                            <option value="2">प्रदेश नम्बर २</option>
+                                                                                            <option value="3">प्रदेश नम्बर ३</option>
+                                                                                            <option value="4">गण्डकी प्रदेश</option>
+                                                                                            <option value="5">प्रदेश नं. ५</option>
+                                                                                            <option value="6">कर्णाली प्रदेश</option>
+                                                                                            <option value="7">सुदुरपश्चिम प्रदेश</option>
+                                                                                                                            </select>
+                                                                            </div>
+                                    <div class="col-md-6 form-group">
+                                        <label for="district">जिल्ला</label>
+                                        <select class="form-control" id="permanent_district" name="permanent_district">
+                                            <option value="">पहिला प्रदेश छनोट गर्नुहोस्</option>
+                                        </select>
+                                                                            </div>
+                                </div>
+                                <div class="row">
+                                    <div class="col-md-6 form-group">
+                                        <label for="nagar">गाउँ/नगर</label>
+                                        <select class="form-control" id="permanent_municipality" name="permanent_municipality">
+                                            <option value="">पहिला जिल्ला छनोट गर्नुहोस् </option>
+                                        </select>
+                                                                            </div>
+                                    <div class="col-md-2 form-group">
+                                        <label for="wardNumSelect">वार्ड नं.</label>
+                                        <input type="text" id="permanent_ward_no" name="permanent_ward_no" value="" class="form-control">
+                                                                            </div>
+                                    <div class="col-md-4 form-group">
+                                    <label for="tole" class="disabilities">टोल.</label>
+                                        <input type="text" id="permanent_village" name="permanent_village" value="" class="form-control">
+                                                                            </div>
+                                </div>
+                                <div id="all">
+                                    <div id="membership">
+                                        <div class="form-group" id="group">
+                                            <label for="temporary">समावेशी समूह</label><br>
+                                            <span>(संविधानको धारा ८४/१७६ को प्रयोजनका लागि। मिल्ने जति सबैमा चिन्ह लगाउनुहोस्)</span>
+                                            <div class="row">
+                                                <div class="col-md-3 form-check-inline"><input class="form-check-input" type="checkbox" name="group[]" id="group_0" value="महिला">&nbsp;<label class="paragraph" for="group">महिला</label></div>
+                                                <div class="col-md-3 form-check-inline"><input class="form-check-input" type="checkbox" name="group[]" id="group_1" value="दलित">&nbsp;<label class="paragraph" for="group_1">दलित</label></div>
+                                                <div class="col-md-3 form-check-inline"><input class="form-check-input" type="checkbox" name="group[]" id="group_2" value="आदिवासी जनजाति">&nbsp;<label class="paragraph" for="group_2">आदिवासी जनजाति</label></div>
+                                                <div class="col-md-3 form-check-inline"><input class="form-check-input" type="checkbox" name="group[]" id="group_4" value="मधेशी">&nbsp;<label class="paragraph" for="group_4">मधेशी</label></div>
+                                            </div>
+                                            <div class="row">
+                                                <div class="col-md-3 form-check-inline"><input class="form-check-input" type="checkbox" name="group[]" id="group_5" value="थारू">&nbsp;<label class="paragraph" for="group_5">थारू</label></div>
+                                                <div class="col-md-3 form-check-inline"><input class="form-check-input" type="checkbox" name="group[]" id="group_6" value="मुस्लिम">&nbsp;<label class="paragraph" for="group_6">मुस्लिम</label></div>
+                                                <div class="col-md-3 form-check-inline"><input class="form-check-input" type="checkbox" name="group[]" id="group_7" value="पिछडिएको क्षेत्र">&nbsp;<label class="paragraph" for="group_7">पिछडिएको क्षेत्र</label></div>
+                                                <div class="col-md-3 form-check-inline"><input class="form-check-input" type="checkbox" name="group[]" id="group_8" value="खसआर्य">&nbsp;<label class="paragraph" for="group_8">खसआर्य</label></div>
+                                            </div>
+                                                                                    </div>
+                                        <div id="volunteer">
+                                            <div class="form-group" id="job">
+                                                <label for="temporary">पेशा</label>
+                                                <div class="row">
+                                                    <div class="col-md-3 form-check-inline"><input class="form-check-input" type="radio" name="occupation" id="occuptaion1" value="कृषि">&nbsp;<label class="paragraph" for="inlineRadio1">कृषि</label></div>
+                                                    <div class="col-md-3 form-check-inline"><input class="form-check-input" type="radio" name="occupation" id="occuptaion2" value="मजदुर">&nbsp;<label class="paragraph" for="inlineRadio2">मजदुर</label></div>
+                                                    <div class="col-md-3 form-check-inline"><input class="form-check-input" type="radio" name="occupation" id="occuptaion3" value="घर-व्यवस्था">&nbsp;<label class="paragraph" for="inlineRadio3">घर-व्यवस्था</label></div>
+                                                    <div class="col-md-3 form-check-inline"><input class="form-check-input" type="radio" name="occupation" id="occuptaion4" value="उद्यम/व्यापार/सेवा">&nbsp;<label class="paragraph" for="inlineRadio4">उद्यम/व्यापार/सेवा</label></div>
+                                                </div>
+                                                <div class="row">
+                                                    <div class="col-md-3 form-check-inline"><input class="form-check-input" type="radio" name="occupation" id="occuptaion5" value="विद्यार्थी">&nbsp;<label class="paragraph" for="inlineRadio5">विद्यार्थी</label></div>
+                                                    <div class="col-md-3 form-check-inline"><input class="form-check-input" type="radio" name="occupation" id="occuptaion6" value="वैदेशिक रोजगार">&nbsp;<label class="paragraph" for="inlineRadio6">वैदेशिक रोजगार</label></div>
+                                                    <div class="col-md-3 form-check-inline"><input class="form-check-input" type="radio" name="occupation" id="occuptaion7" value="बेरोजगार">&nbsp;<label class="paragraph" for="inlineRadio7">बेरोजगार</label></div>
+                                                    <div class="col-md-3 form-check-inline"><input class="form-check-input" type="radio" name="occupation" id="occuptaion8" value="अन्य पेशा">&nbsp;<label class="paragraph" for="inlineRadio8">अन्य पेशा</label></div>
+                                                </div>
+                                                                                            </div>
+                                            <div class="wrap" id="otherOccupation" style="display: none;">
+                                                <label class="skills">अन्य पेशा</label>
+                                                <div class="row">
+                                                    <div class="col-md-6 form-group">
+                                                        <input type="text" name="other_occupation" value="" class="form-control" placeholder="अन्य पेशा">
+                                                    </div>
+                                                                                                    </div>
+                                            </div>
+                                            <div class="wrap" id="skill_area">
+                                                <label class="skills">दक्षताको क्षेत्र</label>
+                                                <div class="row">
+                                                    <div class="col-md-6 form-group">
+                                                        <input type="text" id="area_of_efficiency" name="area_of_efficiency" value="" class="form-control" placeholder="दक्षताको क्षेत्र">
+                                                    </div>
+                                                                                                    </div>
+                                            </div>
+                                            <div class="form-group" id="interest">
+                                                <label for="temporary" class="interest">तपाईंलाई पार्टीको कुन ठाउँमा काम गर्न रुची छ?</label>
+                                                <!--<div class="row">-->
+                                                <!--    <div class="col-md-4 form-check-inline"><input class="form-check-input" type="checkbox" name="interested_department[]" id="groups"  value="कोष संकलन विभाग">&nbsp;<label class="paragraph" for="groups">कोष संकलन विभाग</div>-->
+                                                <!--    <div class="col-md-4 form-check-inline"><input class="form-check-input" type="checkbox" name="interested_department[]" id="groups_1"  value="संगठन विभाग">&nbsp;<label class="paragraph" for="groups_1">संगठन विभाग</div>-->
+                                                <!--    <div class="col-md-4 form-check-inline"><input class="form-check-input" type="checkbox" name="interested_department[]" id="groups_2"  value="अभियान विभाग">&nbsp;<label class="paragraph" for="groups_2">अभियान विभाग</div>-->
+                                                <!--</div>-->
+                                                <!--<div class="row">-->
+                                                <!--    <div class="col-md-4 form-check-inline"><input class="form-check-input" type="checkbox" name="interested_department[]" id="groups_3"  value="नीति तथा कार्यक्रम विभाग">&nbsp;<label class="paragraph" for="groups_3">नीति तथा कार्यक्रम विभाग</div>-->
+                                                <!--    <div class="col-md-4 form-check-inline"><input class="form-check-input" type="checkbox" name="interested_department[]" id="groups_4"  value="प्रशिक्षण विभाग">&nbsp;<label class="paragraph" for="groups_4">प्रशिक्षण विभाग</div>-->
+                                                <!--    <div class="col-md-4 form-check-inline"><input class="form-check-input" type="checkbox" name="interested_department[]" id="groups_5"  value="सञ्चार विभाग">&nbsp;<label class="paragraph" for="groups_5">सञ्चार विभाग</div>-->
+                                                <!--</div>-->
+                                                <!--<div class="row">-->
+                                                <!--    <div class="col-md-4 form-check-inline"><input class="form-check-input" type="checkbox" name="interested_department[]" id="groups_6"  value="सामाजिक न्याय तथा समावेशि">&nbsp;<label class="paragraph" for="groups_6">सामाजिक न्याय तथा समावेशि</div>-->
+                                                <!--    <div class="col-md-4 form-check-inline"><input class="form-check-input" type="checkbox" name="interested_department[]" id="groups_7"  value="कानून विभाग">&nbsp;<label class="paragraph" for="groups_7">कानून विभाग</div>-->
+                                                <!--    <div class="col-md-4 form-check-inline"><input class="form-check-input" type="checkbox" name="interested_department[]" id="groups_8"  value="उद्यमशीलता विभाग">&nbsp;<label class="paragraph" for="groups_8">उद्यमशीलता विभाग</div>-->
+                                                <!--</div>-->
+                                                <!--<div class="row">-->
+                                                <!--    <div class="col-md-4 form-check-inline"><input class="form-check-input" type="checkbox" name="interested_department[]" id="groups_9"  value="तथ्यांक विभाग">&nbsp;<label class="paragraph" for="groups_9">तथ्यांक विभाग</div>-->
+                                                <!--    <div class="col-md-4 form-check-inline"><input class="form-check-input" type="checkbox" name="interested_department[]" id="groups_10"  value="केन्द्रीय कार्यालय विभाग">&nbsp;<label class="paragraph" for="groups_10">केन्द्रीय कार्यालय विभाग</div>-->
+                                                <!--    <div class="col-md-4 form-check-inline"><input class="form-check-input" type="checkbox" name="interested_department[]" id="groups_11"  value="विदेश विभाग">&nbsp;<label class="paragraph" for="groups_11">विदेश विभाग</div>-->
+                                                <!--</div>-->
+                                                <div class="row">
+                                                    <div class="col-md-4 form-check-inline"><input class="form-check-input" type="checkbox" name="interested_department[]" id="groups_12" value="प्रदेश">&nbsp;<label class="paragraph" for="groups_12">प्रदेश</label></div>
+                                                    <div class="col-md-4 form-check-inline"><input class="form-check-input" type="checkbox" name="interested_department[]" id="groups_13" value="जिल्ला">&nbsp;<label class="paragraph" for="groups_13">जिल्ला</label></div>
+                                                    <div class="col-md-4 form-check-inline"><input class="form-check-input" type="checkbox" name="interested_department[]" id="groups_14" value="स्थानिय">&nbsp;<label class="paragraph" for="groups_14">स्थानिय</label></div>
+                                                </div>
+                                                <div class="row">
+                                                    <div class="col-md-4 form-check-inline"><input class="form-check-input" type="checkbox" name="interested_department[]" id="groups_15" value="युवा संगठन">&nbsp;<label class="paragraph" for="groups_15">युवा संगठन</label></div>
+                                                    <div class="col-md-4 form-check-inline"><input class="form-check-input" type="checkbox" name="interested_department[]" id="groups_16" value="महिला संगठन">&nbsp;<label class="paragraph" for="groups_16">महिला संगठन</label></div>
+                                                    <div class="col-md-4 form-check-inline"><input class="form-check-input" type="checkbox" name="interested_department[]" id="groups_17" value="जेष्ठ नागरिक संगठन">&nbsp;<label class="paragraph" for="groups_17">जेष्ठ नागरिक संगठन</label></div>
+                                                </div>
+                                                <div class="row">
+                                                    <div class="col-md-4 form-check-inline"><input class="form-check-input" type="checkbox" name="interested_department[]" id="groups_18" value="अहिले छैन">&nbsp;<label class="paragraph" for="groups_18">अहिले छैन</label></div>
+                                                </div>
+                                                                                            </div>
+                                            <div class="row" id="party-time">
+                                                <div class="col-md-6 form-group">
+                                                    <label for="party_time" class="party_time">तपाईं पार्टीमा कतिको समय दिन सक्नु हुन्छ?</label>
+                                                    <select class="form-control" id="identity_type" name="availability">
+                                                        <option value="दैनिक">दैनिक</option>
+                                                        <option value="हप्तामा केही समय">हप्तामा केही समय</option>
+                                                        <option value="१५ दिनमा केही समय">१५ दिनमा केही समय</option>
+                                                        <option value="महिनामा केही समय">महिनामा केही समय</option>
+                                                        <option value="अहिले निर्णय गरेको छैन">अहिले निर्णय गरेको छैन</option>
+                                                        <option value="समय दिन सक्दिन">समय दिन सक्दिन</option>
+                                                    </select>
+                                                                                                    </div>
+                                            </div>
+                                        </div>
+                                        <div class="row" id="membershipFee">
+                                            <div class="col-md-10 form-group">
+                                                <label for="memberships">सदस्यता शुल्क</label>
+                                                <select class="form-control" id="membership_fee" name="membership_fee">
+                                                    <option value="NRP@100">नेपाल प्रति वर्ष नेरु १००</option>
+                                                    <option value="EUR@60">युरोलाई राष्ट्रिय मुद्रा मान्ने युरोपेली देशहरु प्रति वर्ष ६० युरो</option>
+                                                    <option value="GBP@50">संयुक्त अधिराज्य प्रति वर्ष ५० पाउन्ड</option>
+                                                    <option value="USD@60">अमेरिका, क्यानडा, अष्ट्रेलिया, न्युजिल्यान्ड तथा सिंगापुर प्रति वर्ष ६० अमेरिकी डलर</option>
+                                                    <option value="NRP@6000">जापान, दक्षिण कोरीया, ब्रुनई प्रति वर्ष नेरु ६,०००</option>
+                                                    <option value="NRP@1000">कतार, युएई, साउदी अरबिया लगायतका खाडी राष्ट्रहरू प्रति वर्ष नेरु १,०००</option>
+                                                    <option value="NRP@1000">मलेसिया प्रति वर्ष नेरु १,०००</option>
+                                                    <option value="NRP@500">भारत लगायतका दक्षिण एशियाली राष्ट्रहरू प्रति वर्ष नेरु ५००</option>
+                                                </select>
+                                                                                            </div>
+                                        </div>
+                                    </div>
+                                    <div id="help">
+                                        <div class="row">
+                                            <div class="col-md-6 form-group">
+                                                <label class="party_time">कसरी सहयोग गर्न चाहनु हुन्छ?</label>
+                                                <select class="Accessories form-control" id="helpType" name="help_type">
+                                                    <option value="वार्षिक सहयोग गर्छु">वार्षिक सहयोग गर्छु</option>
+                                                    <option value="मासिक सहयोग गर्छु">मासिक सहयोग गर्छु</option>
+                                                    <option value="अहिले एक पटक सहयोग गर्छु">अहिले एक पटक सहयोग गर्छु</option>
+                                                    <option value="सामान सहयोग गर्छु">सामान सहयोग गर्छु</option>
+                                                    <option value="सदस्यता बिस्तारमा सहयोग गर्छु">सदस्यता बिस्तारमा सहयोग गर्छु</option>
+                                                    <option value="प्रदेश/जिल्ला/स्थानिय तहलाई सहयोग गर्छु">प्रदेश / जिल्ला / स्थानिय तहलाई सहयोग गर्छु</option>
+                                                </select>
+                                                                                            </div>
+                                        </div>
+                                        <div class="row wrapper" id="saman" style="display: none;">
+                                            <div class="col-md-6 form-group">
+                                            <label class="object_donate">सहयोग सामान</label>
+                                                <input type="text" id="objectD" name="help_accessories" value="" class="form-control" placeholder="उदाहरण: ल्यापटप, मोबाईल">
+                                            </div>
+                                                                                    </div>
+                                        <div class="row wrap-other" id="rakam">
+                                            <div class="col-md-6 form-group">
+                                                <label for="helpSelect" class="disabilities" id="helpMoneyLabel">थप सहयोग गर्न चाहनुहुन्छ भने रकम उल्लेख गर्नुहोस्</label>
+                                                <input type="text" id="help" name="help_money" class="form-control" value="" placeholder="सहयोग रकम">
+                                                <!--<small>तपाईंले बिदेशबाट नेपाली ओनलाइन भुक्तानी सेवा प्रदायकबाट रकम भुक्तान गर्दै हुनु हुन्छ भने हामीले एउटा "लगभग "वितिमय दर (Average Conversion Rate) तोकि दिएका छौं। सोही अनुरुप रकम भुक्तान हुनेछ तर तपाईंले विदेशी मुद्राको कार्डबाट रकम भुक्तान गर्नु भयो भने अमेरिकी डलरको वितिमय दर अनुसार रकम भुक्तान हुनेछ।</small>-->
+                                                                                            </div>
+                                            <div class="col-md-6 form-group">
+                                                <label for="mudra">रकमको मुद्रा खुलाउनहोस्</label>
+                                                <select class="form-control" id="currency" name="currency">
+                                                    <option value="NPR">ने. रु.</option>
+                                                    <option value="IRP">भा. रु.</option>
+                                                    <option value="USD">अमेरिकी डलर</option>
+                                                    <option value="EUR">युरो</option>
+                                                    <option value="GBP">पाउन्ड</option>
+                                                </select>
+                                                                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="row" id="paymentType">
+                                        <div class="col-md-6 form-group">
+                                            <label class="party_time">सदस्यता शुल्क / सहयोग रकम भुक्तानी माध्यम</label>
+                                            <select class="transfer-method form-control" id="identity_type" name="payment_type">
+                                                <option value="अनलाईन भुक्तानी">अनलाईन भुक्तानी</option>
+                                                <option value="मनि ट्रान्सफर">मनि ट्रान्सफर</option>
+                                                <option value="आफन्त वा साथीले दिनुहुन्छ">आफन्त वा साथीले दिनुहुन्छ</option>
+                                                <option value="पछि बैंकमा जम्मा गरेर खबर गर्नेछु">पछि बैंकमा जम्मा गरेर खबर गर्नेछु</option>
+                                                <option value="पछि आँफै आएर दिन्छु">पछि आँफै आएर दिन्छु</option>
+                                            </select>
+                                                                                    </div>
+                                    </div>
+                                </div>
+                                <div class="wrap-name" id="relativeDetail" style="display: none;">
+                                    <div class="row">
+                                        <div class="col-md-8 form-group">
+                                        <label>आफन्त वा साथीको नाम</label>
+                                            <input type="text" id="relative_name" value="" name="relative_name" class="form-control">
+                                                                                    </div>
+                                    </div>
+                                    <div class="row">
+                                        <div class="col-md-6 form-group">
+                                        <label>फोन नं</label>
+                                            <input type="text" id="phn" value="" name="relative_phone" class="form-control">
+                                                                                    </div>
+                                        <div class="col-md-6 form-group">
+                                        <label>शहर</label>
+                                            <input type="text" id="city" value="" name="relative_city" class="form-control">
+                                                                                    </div>
+                                    </div>
+                                </div>
+                                <div class="row agency" id="moneyTransfer" style="display: none;">
+                                    <p class="col-md-12">तपाईं कुनै पनि वैध (सम्बन्धित देशमा स्वीकृतिप्राप्त) मनि ट्रान्सफर एजेन्सीबाट हामीलाई रकम पठाउन सक्नुहुनेछ। त्यसरी रकम पठाउँदा दुईवटा काम गर्नु पर्ने हुन्छ। पहिलो, मनि ट्रान्सफर एजेन्सीलाई काठमाडौंमा पार्टीका लेखा अधिकृत मुकेश झाको सम्पर्क नम्बर (+9779851253002) दिनु पर्नेछ। रकम पठाएको जानकारी तपाईंले मुकेशजीलाई फोनमा या funds@sajhaparty.org मा इमेल गरेर दिनु पर्ने हुन्छ। दोस्रो, मनि ट्रान्सफर एजेन्सीले मानेको खण्डमा तपाईंले सो एजेन्सीलाई सीधै हाम्रो खातामा रकम दाखिला गर्न अनुरोध गर्न सक्नुहुन्छ। खाता विवरण निम्न अनुसार छ:</p>
+                                        <p class="col-md-12">
+                                            सदस्यता/सहयोग रकम दाखिला गर्नका लागि खाता विवरण निम्न अनुसार छ:
+                                            </p><li>खातावालाको नाम: साझा पार्टी</li>
+                                            <li>एकाउण्ट नम्बर: ०२९०१०४०२५६३६०</li>
+                                            <li>बैंक: नेपाल इन्भेष्टमेण्ट बैंक</li>
+                                            <li>शाखा: धुमबाराही, काठमाडौं</li>
+                                        <p></p>
+                                    <p class="col-md-12">सो एजेन्सीले भौचर भर्दा ‘रकम जम्मा गर्नेको नाम’मा मनि ट्रान्सफर एजेन्सीको नाम नभई चन्दादाता (तपाईं) को नाम उल्लेख गर्नुपर्नेछ। रकम जम्मा भएको जानकारी तपाईंले परिस्कृत पौडेललाई +9779851253002 मा फोन अथवा funds@sajhaparty.org मा इमेल गरेर दिनु पर्नेछ। यदि तपाईंले फोन गर्नु भएन र भौचरमा दाताको नाम स्पष्ट भएन भने हामी सो रकमलाई ‘अज्ञात दाता’को सूचीमा सुचिकृत गर्नेछौं। यसबारे अन्य प्रश्न भए हामीलाई माथि दिइएका नम्बरमा फोन गर्न सक्नुहुनेछ। तपाईंले गर्नुभएको सहयोग र लिइदिनुभएको कष्टका लागि धेरैधेरै धन्यावद!</p>
+                                </div>
+                                <div class="row agency_1" id="bankDeposite" style="display: none;">
+                                    <p class="col-md-12">यदि तपाईंको बैंक खाता छैन भने हामी तपाईंलाई सानै रकमको किन नहोस् बैंक खाता खोल्न प्रेरित गर्दछौं किनभने सम्भव भएसम्म सबै नागरिकको बैंक खाता हुनु राम्रो हो हाम्रो मान्यता रहेको छ। हाम्रो खातामा जम्मा भएको रकमबारे बैंकले उपलब्ध गराएको विवरणमा दाताको नाम स्पष्ट भएन भने हामी सो रकमलाई ‘अज्ञात दाता’को सूचीमा सुचिकृत गर्नेछौं। यसबारे अन्य प्रश्न भए हामीलाई 01-5536062 या 9851253001 मा फोन गर्नुहोला।</p>
+                                    <p class="col-md-12">
+                                        </p><li>खातावालाको नाम: साझा पार्टी</li>
+                                        <li>एकाउण्ट नम्बर: ०२९०१०४०२५६३६०</li>
+                                        <li>बैंक: नेपाल इन्भेष्टमेण्ट बैंक</li>
+                                        <li>शाखा: धुमबाराही, काठमाडौं</li>
+                                    <p></p>
+                                </div>
+                                <div class="row agency_1" id="onlineTransactionText">
+                                    <p class="col-md-12" style="color:#be210a;"><strong>जरूरी</strong>: तपाईं कुनै पनि अनलाइन सेवा प्रदायक या ब्याङ्कसँग अनलाइन भुक्तानीका लागि रजिस्टर्ड हुनुहुन्न भने माथि “अनलाइन भुक्तानी” बाहेकको विकल्प रोज्नुहोला। तपाईंले नेपाली बाहेक अन्य मुद्रा छान्नु भएको छ भने त्यसलाई "लगभग" विनिमय दर (Average Conversion Rate) को हिसाबमा नेपाली रूपियाँमा परिवर्तित गरिने छ र त्यसै अनुरुप रकम भुक्तान हुनेछ। तर हामी नेपाली ब्याङ्क र अनलाइन सेवा प्रदायकबाटमात्र अनलाइन रकम भुक्तानी स्वीकार गर्न सक्छौं।</p>
+                                     <!--तपाईंले नेपाली बाहेक अन्य मुद्रा छान्नु भएको छ भने त्यसलाई "लगभग" विनिमय दर (Average Conversion Rate) को हिसाबमा नेपाली रूपियाँमा परिवर्तित गरिने छ र त्यसै अनुरुप रकम भुक्तान हुनेछ। तर हामी नेपाली ब्याङ्क र अनलाइन सेवा प्रदायकबाटमात्र अनलाइन रकम भुक्तानी स्वीकार गर्न सक्छौं।-->
+                                    
+
+                                </div>
+
+                                <div class="request row">
+                                    <p class="lines col-md-12">म १८ वर्ष पुगेको नेपाली/गैर आवासीय नेपाली नागरिक हुँ। म सरकारी कर्मचारी होइन। मलाई नेपालको कानूनले राजनीतिक दललाई सहयोग गर्न कुनै प्रतिवन्ध लगाएको छैन। म कुनै ब्यांकको ऋण नतिरेका कारण या कुनै अन्य आरोपका कारण कुनै संस्थाको कालो सूचीमा परेको छैन। म भ्रष्टाचारको अभियोग या अन्य कुनै अभियोगमा दोषी प्रमाणित भएको या छानविन भैरहेको व्यक्ति होइन। यहाँ लेखिएका सबै बुँदाहरु मेरा हकमा सही छन्। आज पश्चात् म मेरो ठेगानामा, इमेलमा र फोनमा पार्टीले आवश्यक ठानेको जानकारी उपलब्ध गराउन स्वीकृति प्रदान गर्दछु।</p>
+                                </div>
+                                <div class="form-check">
+                                    <input class="form-check-input" type="checkbox" name="declaration" value="Yes" id="identity" checked="">
+                                    <label class="checks" for="identity">प्रतिबद्धतामा मन्जुर छु।</label>
+                                </div>
+                            <button type="submit" id="button" class="registerbtn btn">रकम भुक्तान गर्न यहाँ क्लिक गर्नुहोस</button>
+                          <br><br>
+                      </form>
+                    </div>
+                    
+</div>
+
+</div>
+
+</div>
+</div>
+<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+</body>
+</html>
