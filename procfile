@@ -1,1 +1,1 @@
-web: gunicorn dflnepal.wsgi --log-file -
+web: waitress-serve --port=$PORT dlfnepalProject.wsgi:application
